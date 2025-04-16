@@ -239,10 +239,10 @@
         SYM {
             label = "Sym";
             bindings = <
-        &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPS  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-        &trans           &trans       &trans    &trans      &trans         &trans     &trans    &trans        &kp LBKT              &kp RIGHT_BRACKET
-&trans  &trans           &trans       &trans    &trans      &trans         &trans     &trans    &trans        &kp LBRC              &kp RBRC               &trans
-                                      &trans    &trans      &trans         &trans     &trans    &trans
+        &kp EXCLAMATION  &kp AT_SIGN  &kp HASH    &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPS  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+        &trans           &trans       &trans      &trans      &trans         &trans     &trans    &trans        &kp LBKT              &kp RIGHT_BRACKET
+&trans  &trans           &trans       &trans      &trans      &trans         &trans     &trans    &trans        &kp LBRC              &kp RBRC               &trans
+                                      &sys_reset  &trans      &trans         &trans     &trans    &trans
             >;
         };
     };
