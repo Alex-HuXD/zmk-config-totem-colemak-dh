@@ -179,10 +179,10 @@
         BASE {
             label = "Base";
             bindings = <
-           &kp Q        &kp W       &kp F         &kp P        &kp B        &kp J        &kp L            &kp U       &kp Y       &mt RIGHT_META SEMI
+           &kp Q        &kp W       &kp F         &kp P        &kp B        &kp J        &kp L            &kp U       &kp Y       &kp SEMI
            &mt LCTRL A  &mt LALT R  &mt LCMD S    &mt LSHFT T  &kp G        &kp M        &mt RSHFT N      &mt RCMD E  &mt RALT I  &mt RCTRL O
-&kp GRAVE  &kp Z        &kp X       &kp C         &kp D        &kp V        &kp K        &kp H            &kp COMMA   &kp DOT     &kp FSLH             &kp APOS
-                                    &lt 3 ESCAPE  &lt 1 SPACE  &lt 2 TAB    &lt 6 ENTER  &lt 5 BACKSPACE  &lt 4 DEL
+&kp GRAVE  &kp Z        &kp X       &kp C         &kp D        &kp V        &kp K        &kp H            &kp COMMA   &kp DOT     &kp FSLH     &kp APOS
+                                    &lt 3 ESCAPE  &lt 1 SPACE  &lt 2 TAB    &lt 5 ENTER  &lt 5 BACKSPACE  &lt 4 DEL
             >;
         };
 
@@ -199,10 +199,10 @@
         Num {
             label = "Mouse";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &kp EQUAL
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &kp MINUS
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &kp BSLH   &trans
-                        &trans  &trans  &trans    &kp N0  &trans  &trans
+        &kp DELETE     &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &kp EQUAL
+        &kp BACKSPACE  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &kp MINUS
+&trans  &trans         &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &kp BSLH   &trans
+                               &trans  &trans  &trans    &kp N0  &trans  &trans
             >;
         };
 
@@ -221,18 +221,8 @@
             bindings = <
         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans
         &trans        &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bt BT_PRV      &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans             &trans           &bt BT_NXT      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans             &trans           &bt BT_NXT      &trans  &trans  &trans  &trans  &trans  &to 6
                                     &bt BT_CLR_ALL     &trans           &trans          &trans  &trans  &trans
-            >;
-        };
-
-        todo {
-            label = "Num";
-            bindings = <
-        &trans         &trans        &trans            &trans          &trans      &kp ASTERISK            &kp NUMBER_9  &kp NUMBER_0  &kp MINUS     &kp EQUAL
-        &kp LEFT_META  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans      &mt RIGHT_SHIFT PERIOD  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8
-&trans  &trans         &trans        &trans            &trans          &trans      &kp SLASH               &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans
-                                     &kp COMMA         &kp PERIOD      &kp FSLH    &trans                  &trans        &trans
             >;
         };
 
@@ -243,6 +233,25 @@
         &trans           &trans       &trans      &trans      &trans         &trans     &trans    &trans        &kp LBKT              &kp RIGHT_BRACKET
 &trans  &trans           &trans       &trans      &trans      &trans         &trans     &trans    &trans        &kp LBRC              &kp RBRC               &trans
                                       &sys_reset  &trans      &trans         &trans     &trans    &trans
+            >;
+        };
+
+        Game {
+            label = "QWER";
+            bindings = <
+        &trans     &kp Q      &kp W      &kp E             &kp R             &trans  &trans  &trans  &trans  &trans
+        &kp LSHFT  &kp GRAVE  &kp S      &kp D             &kp F             &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp Z      &kp X      &kp C             &kp V             &trans  &trans  &trans  &trans  &trans  &to 0
+                              &kp SPACE  &kp LEFT_CONTROL  &lt 7 LEFT_ALT    &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans
+        &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
