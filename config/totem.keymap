@@ -239,10 +239,10 @@
         Game {
             label = "QWER";
             bindings = <
-        &trans     &kp Q  &kp W      &kp E             &kp R             &trans  &trans  &trans  &trans  &trans
-        &kp LSHFT  &kp A  &kp S      &kp D             &kp F             &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp Z  &kp X      &kp C             &kp V             &trans  &trans  &trans  &trans  &trans  &to 0
-                          &kp SPACE  &kp LEFT_CONTROL  &lt 7 LEFT_ALT    &trans  &trans  &trans
+        &trans     &kp Q  &kp W      &kp E             &kp R                 &trans  &trans  &trans  &trans  &trans
+        &kp LSHFT  &kp A  &kp S      &kp D             &kp F                 &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp Z  &kp X      &kp C             &kp V                 &trans  &trans  &trans  &trans  &trans  &to 0
+                          &kp SPACE  &kp LEFT_CONTROL  &lt 7 LEFT_COMMAND    &trans  &trans  &trans
             >;
         };
 
