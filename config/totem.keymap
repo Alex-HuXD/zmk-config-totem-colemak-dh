@@ -240,10 +240,10 @@
         Game {
             label = "QWER";
             bindings = <
-        &trans     &kp Q  &kp W               &kp E        &kp R                 &trans  &trans  &trans  &trans  &trans
-        &kp LSHFT  &kp A  &kp S               &kp D        &kp F                 &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp Z  &kp X               &kp C        &kp V                 &trans  &trans  &trans  &trans  &trans  &to 0
-                          &mt LCTRL QUESTION  &lt 7 SPACE  &mt LEFT_ALT GRAVE    &trans  &trans  &trans
+        &trans     &kp Q  &kp W            &kp E        &kp R             &trans  &trans  &trans  &trans  &trans
+        &kp LSHFT  &kp A  &kp S            &kp D        &kp F             &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp Z  &kp X            &kp C        &kp V             &trans  &trans  &trans  &trans  &trans  &to 0
+                          &mt LCTRL GRAVE  &lt 7 SPACE  &lt 8 QUESTION    &trans  &trans  &trans
             >;
         };
 
