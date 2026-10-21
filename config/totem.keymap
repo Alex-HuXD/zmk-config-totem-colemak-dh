@@ -240,10 +240,10 @@
         Game {
             label = "QWER";
             bindings = <
-        &trans     &kp Q  &kp W      &kp E             &kp R                 &trans  &trans  &trans  &trans  &trans
-        &kp LSHFT  &kp A  &kp S      &kp D             &kp F                 &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp Z  &kp X      &kp C             &kp V                 &trans  &trans  &trans  &trans  &trans  &to 0
-                          &kp SPACE  &kp LEFT_CONTROL  &lt 7 LEFT_COMMAND    &trans  &trans  &trans
+        &trans     &kp Q  &kp W               &kp E        &kp R                 &trans  &trans  &trans  &trans  &trans
+        &kp LSHFT  &kp A  &kp S               &kp D        &kp F                 &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp Z  &kp X               &kp C        &kp V                 &trans  &trans  &trans  &trans  &trans  &to 0
+                          &mt LCTRL QUESTION  &lt 7 SPACE  &mt LEFT_ALT GRAVE    &trans  &trans  &trans
             >;
         };
 
@@ -253,6 +253,15 @@
         &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+        &kp LBKT           &kp RBRC         &kp POUND  &kp ASTERISK   &kp DOUBLE_QUOTES    &trans  &trans  &trans  &trans  &trans
+        &kp RIGHT_BRACKET  &kp AT           &kp PRCNT  &kp BACKSLASH  &kp PIPE             &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACE     &kp EXCLAMATION  &kp CARET  &kp COLON      &kp LESS_THAN        &trans  &trans  &trans  &trans  &trans  &trans
+                                            &trans     &trans         &trans               &trans  &trans  &trans
             >;
         };
     };
